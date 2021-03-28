@@ -1,0 +1,20 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Menu : MonoBehaviour {
+ 
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("InGame");
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("Testes");
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
+}
